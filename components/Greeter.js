@@ -2,12 +2,12 @@ import React from "react";
 import { StyleSheet, Text, View, TextInput } from "react-native";
 import { Button } from 'react-native-elements';
 
-const Greeter = () => {
+const Greeter = ({greeting, buttonTitle}) => {
   return (
     <View style={styles.container}>
-      <Text> Hello World! </Text>
+      <Text> {greeting} </Text>
       <TextInput placeholder="Enter your name" />
-      <Button title='Please greet me!' />
+      <Button title={buttonTitle} />
     </View>
   );
 };
